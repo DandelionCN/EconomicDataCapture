@@ -24,7 +24,7 @@ import os
 
 def capture_stock_data():
     capture_date = datetime.datetime.now().strftime("%Y%m%d")
-    save_dir = "/home/dandelion/stock_data/" + capture_date
+    save_dir = "/home/*/stock_data/" + capture_date
 
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
